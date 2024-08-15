@@ -1,0 +1,80 @@
+
+/* Variables CSS para facilitar cambios */
+:root {
+  --fondo-color: #ddebf1d3;
+  --text-color: #ffff;
+  --cta-bg-color: #ffff;
+  --color-boton-texto: #005afe;
+  --color-de-fondo: #00ffbc;
+}
+
+
+#fondo {
+  background-color: var(--fondo-color);
+}
+
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  min-height: 100vh; /* Mantén si es necesario que el body ocupe toda la pantalla */
+  background: #ffff;
+}
+
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(180deg, #2bc1d57b 0%, #0c58e475 100%),
+  url(https://recursoshumanos.tv/wp-content/uploads/2022/05/RHTV-MB0530_Web-personas-en-el-centro.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero_container-text {
+  /* contenedor está centrado verticalmente con Flexbox */
+  background-color: none;
+}
+
+.hero_title {
+  font-size: clamp(2rem, 4vw, 4rem); /* Tamaño de fuente fluido */
+  color: var(--text-color);
+}
+
+.hero_copy {
+  font-size: clamp(1rem, 2vw, 2rem); /* Tamaño de fuente fluido */
+  font-weight: 300;
+  margin: 20px 0;
+  color: var(--text-color);
+}
+
+.hero_cta {
+  display: inline-block;
+  text-decoration: none;
+  background: var(--cta-bg-color);
+  color: var(--color-boton-texto);
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.hero_cta:hover {
+  background: var(--color-de-fondo);
+  color: var(--text-color);
+}
+
+.hero_wave {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
